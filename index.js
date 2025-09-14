@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const app = express().use(bodyParser.json());
 
 // Token bạn đặt trong Facebook Developer khi cấu hình webhook
-const VERIFY_TOKEN = "YOUR_VERIFY_TOKEN";
+const VERIFY_TOKEN = "page_webhook_token";
 
 // Xác thực webhook (Facebook gọi GET)
 app.get("/webhook", (req, res) => {
